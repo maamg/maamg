@@ -90,10 +90,7 @@ nav > div{
     font-family: "Dancing Script",serif;
     font-size: 35px;
 }
-/* about-1 */
-/* .about, .resume{
-    display:none;
-} */
+
 .about-1 .intro img{
     width: 300px;
     justify-self: center;
@@ -160,4 +157,25 @@ nav > div{
     stroke: #03AC13;
 }
 
+/* Media Quary */
+@media(max-width:768px){
+    .about-1 .grid{
+        grid-template-columns: 1fr;
+    }
+    
+    .about-1 .grid>*:nth-child(3){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
+    .grid-3{
+        grid-template-columns:1fr;
+    }
+}
 
