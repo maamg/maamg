@@ -1,0 +1,163 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+/* Variables */
+:root{
+    --primary-color: rgba(14,15,16,0.6) ;
+    --secondary-color: rgba(7,7,8, 0.95);
+    --tertiary-color: rgba(16,18,20,0.4);
+
+}
+
+/* Basic CSS */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: var(--primary-color) ;
+    /* background-image: url(/images/background-image.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width:100%;
+}
+
+progress{
+    width:100%;
+}
+/* navbar */
+nav{
+    height:1.1vh;
+}
+nav > div{
+    background-color: var(--tertiary-color);
+    margin: 5px 0;
+}
+#Layer_1{
+    width: 30px;
+}
+
+/* Home */
+.home {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.home h1{
+    font-family: 'Courgette', sans;
+    font-weight: 400;
+}
+
+.sign{
+    font-family: "Dancing Script",serif;
+    font-size: 35px;
+}
+/* about-1 */
+/* .about, .resume{
+    display:none;
+} */
+.about-1 .intro img{
+    width: 300px;
+    justify-self: center;
+    align-self: center;
+}
+
+.header{
+    width: 100px;
+}
+
+.intro-text .flex{
+    align-items: center;
+}
+.about-1 .works{
+    justify-content: space-around;
+    align-items:center;
+}
+
+.about-1 .grid{
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-1 .grid>*:nth-child(3){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.interest .flex{
+    gap: 10px;
+    justify-content:flex-start;
+}
+.frame1 > i{
+    color: #03AC13;
+    height: 40px;
+    padding: 10px;
+    border-right: 6px solid white;
+} 
+.fame1 > p{
+    align-self: start;
+}
+
+.about-2> .card> i{
+    background-color:rgba(16,18,20,0.8);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* Circle chart */
+.skills-circle .flex{
+    flex-direction: column;
+}
+
+.GIS .box .percentage svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #03AC13;
+}
+.WebDevelop .box .percentage svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke: #03AC13;
+}
+
+.DataAnalysis .box .percentage svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #03AC13;
+}
+
+
