@@ -64,7 +64,8 @@ progress{
 }
 /* navbar */
 nav{
-    height:1.1vh;
+    height:1vh;
+    z-index: 1000;
 }
 nav > div{
     background-color: var(--tertiary-color);
