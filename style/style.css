@@ -64,8 +64,7 @@ progress{
 }
 /* navbar */
 nav{
-    height:1vh;
-    z-index: 1000;
+    height: 100%;
 }
 nav > div{
     background-color: var(--tertiary-color);
@@ -104,6 +103,9 @@ nav > div{
 
 .intro-text .flex{
     align-items: center;
+}
+.wr i{
+    margin-right: 10px;
 }
 .about-1 .works{
     justify-content: space-around;
@@ -171,6 +173,9 @@ nav > div{
     .flex{
         display: flex;
         flex-direction: column;
+    }
+    .interest .flex{
+        flex-direction: row;
     }
     .grid{
         grid-template-columns:1fr;
