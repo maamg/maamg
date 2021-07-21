@@ -94,7 +94,7 @@ nav li h4{
     display: grid;
     align-items: center;
     justify-content: center;
-    background-image: url(/images/Napa-Valley.jpg);
+    background-image: url(images/Napa-Valley.jpg);
     background-position: 100%;
     background-size: cover;
     background-color: var(--secondary-color);
