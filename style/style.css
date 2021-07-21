@@ -22,7 +22,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: white;
+    color: #EDEDED;
     background-color: var(--primary-color) ;
     /* background-image: url(/images/background-image.jpg); */
     background-size: cover;
@@ -83,10 +83,10 @@ nav li h4{
 /* hide nav text */
 .home-icon:hover + .hide-1,.home-icon:hover + .hide-2,.home-icon:hover + .hide-3,.home-icon:hover + .hide-4{
     display: block;
-    color: #03AC13;
+    color: #DA0037;
 } 
 .home-icon:hover{
-    color: #03AC13;
+    color: #DA0037;
 }
 /* Home */
 .home {
@@ -144,7 +144,7 @@ nav li h4{
     justify-content:flex-start;
 }
 .frame1 > i{
-    color: #03AC13;
+    color: #DA0037;
     height: 40px;
     padding: 10px;
     border-right: 6px solid white;
@@ -166,16 +166,16 @@ nav li h4{
 
 .GIS .box .percentage svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 70) / 100);
-    stroke: #03AC13;
+    stroke: #DA0037;
 }
 .WebDevelop .box .percentage svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 55) / 100);
-    stroke: #03AC13;
+    stroke: #DA0037;
 }
 
 .DataAnalysis .box .percentage svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 80) / 100);
-    stroke: #03AC13;
+    stroke: #DA0037;
 }
 
 /* Media Quary */

@@ -132,9 +132,11 @@
 }
 
 .marker{
-  color: #03AC13;
+  color: #DA0037;
 }
-
+.fas{
+  color:#DA0037;
+}
 /* Display Flex */
 .flex{
   display: flex;
@@ -171,7 +173,7 @@ progress[value] {
   appearance: none;
 }
 progress[value]::-webkit-progress-bar {
-  color: #03AC13 ;
+  color: red ;
   background-color:#6D616F;
   border: solid 1px gray;
   border-radius: 5px;
@@ -223,7 +225,7 @@ progress[value]::-webkit-progress-bar {
 }
 .box .percentage svg circle:nth-child(2){
   stroke-dashoffset: calc(440 - (440 * 25) / 100);
-  stroke: #03AC13;
+  stroke: #DA0037;
 }
 
 .box .percentage .number{
