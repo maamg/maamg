@@ -29,8 +29,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    display: grid;
-    grid-template-columns: 1fr 12fr;
+
 }
 
 ul{
@@ -68,18 +67,37 @@ nav{
 }
 nav > div{
     background-color: var(--tertiary-color);
-    margin: 5px 0;
+    /* margin: 5px 0; */
 }
 #Layer_1{
-    width: 30px;
+    width: 20px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+nav li h4{
+    font-size: 15px;
 }
 
+/* hide nav text */
+.home-icon:hover + .hide-1,.home-icon:hover + .hide-2,.home-icon:hover + .hide-3,.home-icon:hover + .hide-4{
+    display: block;
+    color: #03AC13;
+} 
+.home-icon:hover{
+    color: #03AC13;
+}
 /* Home */
 .home {
     height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
+    background-image: url(/images/Napa-Valley.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-color: var(--secondary-color);
 }
 .home h1{
     font-family: 'Courgette', sans;
@@ -88,7 +106,7 @@ nav > div{
 
 .sign{
     font-family: "Dancing Script",serif;
-    font-size: 35px;
+    font-size: 24px;
 }
 
 .about-1 .intro img{
@@ -174,7 +192,8 @@ nav > div{
         display: flex;
         flex-direction: column;
     }
-    .interest .flex{
+
+    .interest .flex, .education .flex, .experience .flex{
         flex-direction: row;
     }
     .grid{

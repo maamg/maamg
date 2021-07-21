@@ -112,6 +112,11 @@
 .xxl{
   font-size: 4rem;
 }
+
+/* font weight */
+.bold{
+  font-weight:bold;
+}
 /* Text Center */
 .text-center{
   text-align: center;
@@ -244,4 +249,12 @@ progress[value]::-webkit-progress-bar {
 .box .text{
   padding: 10px 0 0;
   color: #999;
+}
+
+
+/* hide */
+.hide-1,.hide-2,.hide-3,.hide-4{
+  display: none;
+  margin-top: -26px;
+  font-weight: bold;
 }
