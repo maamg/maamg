@@ -167,17 +167,30 @@
 }
 
 /* progress bar */
+
 progress[value] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 progress[value]::-webkit-progress-bar {
-  color: red ;
+  color: #DA0037 ;
   background-color:#6D616F;
-  border: solid 1px gray;
+  border: solid .3px gray;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress {
+  color: #DA0037;
+}
+
+progress::-webkit-progress-value {
+  background: #DA0037;
+}
+
+progress::-moz-progress-bar {
+  background: #6D616F;
 }
 .fa-map-marked-alt, .fa-calendar-alt{
   margin-right: 6px;
