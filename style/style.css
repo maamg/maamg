@@ -65,6 +65,7 @@ progress{
 nav{
     height: 100%;
 }
+    
 nav > div{
     background-color: var(--tertiary-color);
     /* margin: 5px 0; */
