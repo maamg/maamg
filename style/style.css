@@ -24,12 +24,10 @@ body{
     line-height: 1.6;
     color: #EDEDED;
     background-color: var(--primary-color) ;
-    /* background-image: url(/images/background-image.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-
+    
 }
 
 ul{
@@ -61,11 +59,25 @@ img{
 progress{
     width:100%;
 }
+
+.full-content{
+    display: grid;
+    grid-template-columns: 80px auto;
+    position: relative;
+    /* height: 100vh; */
+}
 /* navbar */
 nav{
+    grid-column: 1/2;
+    position:fixed;
     height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
 }
-    
+nav::-webkit-scrollbar{
+    display: none;
+}    
 nav > div{
     background-color: var(--tertiary-color);
     /* margin: 5px 0; */
@@ -73,14 +85,14 @@ nav > div{
 #Layer_1{
     width: 20px;
 }
-.main{
-    display: grid;
-    grid-template-columns: 80px auto;
-}
+
 nav li h4{
     font-size: 15px;
 }
-
+.main{
+    grid-column: 2/3;
+    position: relative;
+}
 /* hide nav text */
 .home-icon:hover + .hide-1,.home-icon:hover + .hide-2,.home-icon:hover + .hide-3,.home-icon:hover + .hide-4{
     display: block;
@@ -98,7 +110,6 @@ nav li h4{
     background-image: url(/images/Napa-Valley.jpg);
     background-position: 100%;
     background-size: cover;
-    background-color: var(--secondary-color);
 }
 .home h1{
     font-family: 'Courgette', sans;
