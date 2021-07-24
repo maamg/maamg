@@ -130,6 +130,9 @@
 .bg-tertiary{
   background-color: var(--tertiary-color);
 }
+.bg-marker{
+  background-color: #DA0037;
+}
 
 .marker{
   color: #DA0037;
