@@ -11,6 +11,9 @@
 .btn:hover{
   cursor: pointer;
 }
+
+/* iframe */
+
 /* Margin */
 .my-1 {
   margin: 1rem 0;
@@ -120,11 +123,16 @@
 /* Text Center */
 .text-center{
   text-align: center;
+  align-items: center;
 }
 
 /* Background color, button color */
 .bg-primary{
   background-color: var(--primary-color);
+}
+
+.bg-secondary{
+  background-color: var(--secondary-color);
 }
 
 .bg-tertiary{
@@ -133,6 +141,7 @@
 .bg-marker{
   background-color: #DA0037;
 }
+
 
 .marker{
   color: #DA0037;
@@ -276,3 +285,4 @@ progress::-moz-progress-bar {
   margin-top: -26px;
   font-weight: bold;
 }
+

@@ -21,9 +21,11 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    line-height: 1.6em;
     color: #EDEDED;
     background-color: var(--primary-color) ;
+    background-image: url(/images/Napa-Valley.jpg);
+    background-attachment:fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +46,7 @@ a{
 
 h1,h2{
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.2em;
     margin: 10px 0;
 }
 
@@ -192,6 +194,29 @@ nav li h4{
     stroke: #DA0037;
 }
 
+
+/* portfolio */
+.my-map .grid{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-column: repeat(2, 1fr);
+}
+
+/* Contact */
+.contact > div{
+    justify-content:space-between;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+textarea{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px ;
+    font-size:16px;
+}
 /* Media Quary */
 @media(max-width:768px){
     .about-1 .grid{
